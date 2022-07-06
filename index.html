@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <meta charset="utf-8">
+        <title>메인화면</title>
+        <style>
+            h1 {text-align:center; font-size:50px; font-weight:bold; line-height:100px;background-image: url("img/snow_background.jpg");}
+            h2 {text-align: center; text-shadow: 3px 3px 4px grey;}
+            fieldset {width: 300px; border: 3 solid; text-align: center; background-image: url("img/snow_background.jpg");}
+            #title {text-align: center; color:white; font-size: 23px; font-weight: normal; background-color: cornflowerblue; }
+            .center {display: flex; justify-content: center; align-items: center;}
+        </style>
+    </head>
+    <body>
+        <h1><strong>숙명여자대학교 커뮤니티</strong></h1>
+        <script>
+            var today = new Date();
+            var year = today.getFullYear();
+            var month = today.getMonth()+1;
+            var day = today.getDate();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            document.write("<h2>"+year+"년 "+month+"월 "+day+"일 "+hour+":"+minute+":"+second+"</h2>");
+        </script>
+        <p align="right">1814984 정효주</p><br>
+        <hr><br>
+        <div class="center">
+            <fieldset>
+                <legend id="title">로그인</legend><br>
+                아이디: <input type="text" name="id" size=15><br>
+                비밀번호: <input type="password" name="pw" size=15><br><br>            
+                <input type="submit" value="로그인">
+                <button type="button" onclick="location.href='join.html'">회원가입</button>
+            </fieldset>
+        </div><br>
+
+        <table width="1200" align="center">
+            <tr><ul>
+                <td width="270"><li><a href="weather.html">오늘 날씨와 추천 착장</a></li></td>
+                <td width="200"><li><a href="song.html">눈송이 소개</a></li></td>
+                <td width="270"><li><a href="library.html">도서대출 및 추천도서</a></li></td>
+                <td width="150"><li><a href="memo.html">메모장</a></li></td>
+                <td width="160"><li><a href="https://smsso.sookmyung.ac.kr/" target="box">숙명포털</a></li></td> 
+                <td width="170"><li><a href="https://www.sookmyung.ac.kr/" target="box">학교홈페이지</a></li></td>               
+            </ul></tr>
+            <tr height="40"></tr>
+            <tr><td colspan="5">
+            <iframe src ="https://www.sookmyung.ac.kr/" name="box" width="1000" height="600" align="center" ></iframe> </td></tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul.list { list-style-position: inside }
+            li.usa { list-style: none; padding-left: 20px; background-image: url("img/flag_usa.png"); background-position: left center; background-repeat: no-repeat; background-size: 18px;}
+            li.kor { list-style: none; padding-left: 20px; background-image: url("img/flag_kor.jpg"); background-position: left center; background-repeat: no-repeat; background-size: 18px;}
+            p { font-weight: bold; font-size: 20px;}
+        </style>
+    </head>
+    <body>
+        <p align="left"><a href="index.html">메인화면으로 이동</a></p>
+        <h1>중앙도서관 도서 대출</h1><hr><br> 
+        <form>
+            이름: <input type="text" name="name" size=15> <br><br>
+            학번: <input type="num" name="num" size=15> <br><br>
+            도서명: <input type="text" name="book" size=15> <br><br>
+            대출 희망일: <input type="date" name="last_date" min="2018-09-01"> <br><br>
+            대출 희망시간: <input type="time" name="time_from" min="10:00" max="17:00"> 에서
+            <input type="time" name="time_until" min="09:00" max="18:00"> 사이<br><br>
+            기타 사항: <br>
+            <textarea name="request" cols="50" rows="5"></textarea> <br><br>
+            <input type="submit" value="대출하기"> 
+        </form><br><hr>
+        <h2>추천 도서 목록</h2>
+        <ul class="list">
+            <p>IT기술의 이해</p>
+            <li class="kor">최윤철, 임순범, 한탁돈 공저, 컴퓨터와 IT 기술의 이해</li>
+            <li class="usa">D. Morley, C. Parker, Understanding Computers 15th Ed.</li>
+            <li class="usa">G. Shelly, M. Vermaat, Discovering Computers</li>
+        </ul><br>
+        <ul class="list">
+            <p>웹프로그래밍</p>
+            <li class="kor">임순범, 박희민 공저, HTML5 웹프로그래밍 입문</li>
+            <li class="kor">최윤철, 임순범 공저, 소셜미디어 시대의 인터넷 활용</li>
+            <li class="renew">B. McLaughlin, What Is HTML5 (신규)</li>
+        </ul>
+        <ul class="list">
+            <p>소프트웨어의 이해</p>
+            <li class="kor">창병모, 유석종, 이상규 공저, Python 프로그래밍의 이해</li>
+            <li class="kor">박응용 저자, Do it! 점프 투 파이썬</li>
+            <li class="usa">Andreas C. Mueller, Sarah Guido, Introduction to Machine Learing with Python </li>
+        </ul><br>
+        <ul class="list">
+            <p>데이터베이스프로그래밍</p>
+            <li class="kor">r김연희 저자, 데이터베이스 개론(3판)</li>
+            <li class="usa">Ramakrishnan, Gehrke Johannes, McGraw-Hill, Database Management Systems</li>
+        </ul><br>
+    </body>
+</html>
